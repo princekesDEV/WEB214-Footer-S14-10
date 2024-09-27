@@ -1,0 +1,128 @@
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+  .main > div:first-child {
+    padding: 30px 0px;
+  }
+  .footer > div:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .footer > div > div {
+    font-size: 10px;
+  }
+  .main {
+    order: 2;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer > div:first-child {
+    display: none;
+  }
+
+  .main > div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main > div > div:hover {
+    background-color: #1f21a6;
+  }
+
+  .main > div > div p {
+    display: none;
+  }
+
+  .main > div > div:hover p {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.main > div {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.main > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main > div:first-child {
+  background-color: #01026e;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > div:last-child {
+  background-color: #3040af;
+  color: white;
+  width: 100%;
+  padding: 20px 10px 20px 50px;
+  box-sizing: border-box;
+}
+
+.main > div:last-child h3 {
+  font-weight: 600;
+  font-family: Inter;
+  font-size: 16.5px;
+}
+
+.main > div:last-child p {
+  font-weight: 400;
+  font-family: Inter;
+  font-size: 12.5px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-size: 13.5px;
+  font-family: Inter;
+  font-weight: 500;
+  border-top: 0.05rem solid rgb(200, 200, 200);
+}
+
+.footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > div:first-child > div {
+  margin: 0 5px;
+}
+
+.footer > div:last-child > div {
+  margin: 0px 10px;
+  text-decoration: underline;
+}
+
+.footer > div:last-child > div:first-child {
+  text-decoration: none;
+}
